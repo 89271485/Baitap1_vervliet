@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Đăng Kí thành viên</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            label{
+                font-weight: boid;
+                display: block;
+            }
+            div{
+                margin-top: 10px; 
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Đăng Kí Thông Tin</h3>
+        <hr>
+        <form action="RegisterServlet" method="post" enctype="multipart/form-data">
+            <div>
+                <label>Họ Tên</label>
+                <input type="text" name="hoten" value=""/>
+            </div>
+            <div>
+                <label>Giới tính</label>
+                <input type="radio" name="gioitinh" value="nam" checked="checked"/>Nam
+                <input type="radio" name="gioi" value="nữ"/>Nữ
+            </div>
+            <div>
+                <label>Sở Thích</label>
+                <input type="checkbox" name="sothich" value="Mua Sắm" />Mua Sắm
+                <input type="checkbox" name="sothich" value="Du Lịch" />Du Lịch
+                <input type="checkbox" name="sothich" value="Xem Phim" />Xem Phim
+            </div>
+                 <div>
+                <label>Ảnh Đại Diện</label>
+                <input type="file" name="photo"/>
+            </div>
+            <input type="submit" value="gửi"/>
+        </form>
+    </body>
+</html>
+
